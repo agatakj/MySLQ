@@ -110,7 +110,7 @@ FROM
     products p
         JOIN
     order_items oi ON p.product_id = oi.product_id
-GROUP BY p.product_name DESC WITH ROLLUP;
+GROUP BY p.product_name WITH ROLLUP;
 
 /* question 7.	
 Write a SELECT statement that answers this question: Which customers have ordered more than one product (ignore multiple orders for same product)? Return these columns:
